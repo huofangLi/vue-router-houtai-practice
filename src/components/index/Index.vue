@@ -1,6 +1,6 @@
 <template>
 	<el-container style="height: 100%; border: 1px solid #eee">
-		<el-aside width="200px" style="background-color: #000000;">
+		<el-aside width="200px" style="background-color: #FFFFFF;">
 			<el-menu :default-openeds="['']">
 				<el-submenu index="1">
 					<template slot="title">
@@ -96,38 +96,55 @@
 		</el-aside>
 
 		<el-container>
-			<el-header style="text-align: right; font-size: 12px">
-				<el-dropdown>
-					<i class="el-icon-setting" style="text-align: left;"></i>
-					<el-dropdown-menu slot="dropdown">
-						<el-dropdown-item>查看</el-dropdown-item>
-						<el-dropdown-item>新增</el-dropdown-item>
-						<el-dropdown-item>删除</el-dropdown-item>
-					</el-dropdown-menu>
-				</el-dropdown>
-				
-				
-				<el-dropdown>
-					<i class="el-icon-setting" style="margin-right: 15px"></i>
-					<el-dropdown-menu slot="dropdown">
-						<el-dropdown-item>查看</el-dropdown-item>
-						<el-dropdown-item>新增</el-dropdown-item>
-						<el-dropdown-item>删除</el-dropdown-item>
-					</el-dropdown-menu>
-				</el-dropdown>
-				<span style="margin-right: 15px;">admin</span>
-				<el-dropdown>
-					<i class="el-icon-arrow-down" style="margin-right: 15px"></i>
-					<el-dropdown-menu slot="dropdown">
-						<el-dropdown-item>首页</el-dropdown-item>
-						<el-dropdown-item>个人信息</el-dropdown-item>
-						<el-dropdown-item>avue官网</el-dropdown-item>
-						<el-dropdown-item>码云地址</el-dropdown-item>
-						<el-dropdown-item>github</el-dropdown-item>
-						<el-dropdown-item>退出系统</el-dropdown-item>
-					</el-dropdown-menu>
-				</el-dropdown>
-				<el-dropdown><i class="el-icon-more" style="margin-right: 15px"></i></el-dropdown>
+			<el-header style="text-align: right; font-size: 12px" class="item-header">
+				<div class="item-header-left">
+					<el-dropdown>
+						<i class="el-icon-d-caret" style="margin-left: 15px;"></i>
+					</el-dropdown>
+					<el-dropdown>
+						<i class="el-icon-setting" style="margin-left: 15px;"></i>
+						<el-dropdown-menu slot="dropdown">
+							<el-dropdown-item>查看</el-dropdown-item>
+							<el-dropdown-item>新增</el-dropdown-item>
+							<el-dropdown-item>删除</el-dropdown-item>
+						</el-dropdown-menu>
+					</el-dropdown>
+					<el-dropdown>	
+						<i class="el-icon-document" style="margin-left: 15px;"></i>
+					</el-dropdown>
+					
+					<el-dropdown>
+						<el-input v-model="input" placeholder="请输入内容" style="margin-left: 15px;"></el-input>
+					</el-dropdown>
+					
+
+				</div>
+
+				<div class="item-header-right">
+					<el-dropdown>
+						<i class="el-icon-setting" style="margin-right: 15px"></i>
+						<el-dropdown-menu slot="dropdown">
+							<el-dropdown-item>查看</el-dropdown-item>
+							<el-dropdown-item>新增</el-dropdown-item>
+							<el-dropdown-item>删除</el-dropdown-item>
+						</el-dropdown-menu>
+					</el-dropdown>
+					<span style="margin-right: 15px;">admin</span>
+					<el-dropdown>
+						<i class="el-icon-arrow-down" style="margin-right: 15px"></i>
+						<el-dropdown-menu slot="dropdown">
+							<el-dropdown-item>首页</el-dropdown-item>
+							<el-dropdown-item>个人信息</el-dropdown-item>
+							<el-dropdown-item>avue官网</el-dropdown-item>
+							<el-dropdown-item>码云地址</el-dropdown-item>
+							<el-dropdown-item>github</el-dropdown-item>
+							<el-dropdown-item>退出系统</el-dropdown-item>
+						</el-dropdown-menu>
+					</el-dropdown>
+					<el-dropdown>
+						<i class="el-icon-more" style="margin-right: 15px"></i>
+					</el-dropdown>
+				</div>
 			</el-header>
 
 			<el-main><router-view /></el-main>
@@ -138,13 +155,8 @@
 <script>
 export default {
 	data() {
-		const item = {
-			date: '2016-05-02',
-			name: '王小虎',
-			address: '上海市普陀区金沙江路 1518 弄'
-		};
 		return {
-			tableData: Array(20).fill(item)
+			 input: ''
 		};
 	}
 };
@@ -165,5 +177,19 @@ export default {
 	text-decoration: none;
 	color: black;
 	font: 12px;
+}	
+
+.item-header {
+	display: flex;
+	justify-content: space-around;
+	justify-content: space-between;
 }
+
+/* .item-header-left {
+	justify-content: flex-start;
+}
+
+.item-header-right {
+	justify-content: flex-end;
+} */
 </style>

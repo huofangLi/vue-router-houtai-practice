@@ -1,21 +1,16 @@
 <template>
 	<div>
-		数据展示
-		
 		
 	</div>
 </template>
 
 <script>
-	export default {
-		name: 'ShuJv',
-		data() {
-			return {
-				
-			};
-		}
-	};
+export default {
+	name: 'ShuJv',
+	data() {
+		return {};
+	}
+};
 </script>
 
-<style>
-</style>
+<style></style>
