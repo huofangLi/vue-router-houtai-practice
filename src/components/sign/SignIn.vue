@@ -12,7 +12,7 @@
 				<i class="icon-asterisk"></i>
 				密码:
 			</p>
-			<input v-model="password1" placeholder="	密码" class="a" />
+			<input v-model="password1" placeholder="密码" class="a" />
 		</div>
 		<div class="xia">
 			<button type="button" @click="commit" class="g"><h3>登录</h3></button>
@@ -27,8 +27,11 @@ export default {
 		return { name: '', password1: '' };
 	},
 	methods: {
+		
 		commit: function() {
-			alert();
+			alert("登录成功");
+			
+			_this.$router.push('/index');
 		}
 	}
 };
