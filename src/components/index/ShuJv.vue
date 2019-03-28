@@ -30,8 +30,12 @@
 					<div class="kt1">周度跃数</div>
 				</div>
 			</el-col>
+<<<<<<< HEAD
 			
 			<div class="top" style="margin-top: 30px;">盒子卡片展示：</div>
+=======
+			<div class="top">盒子卡片展示：</div>
+>>>>>>> 810e5453779c3e88c82bd750e400242b085a56f1
 			<el-col :span="8">
 				<div class="grid-content bg-purple">
 					<div class="left">
@@ -65,7 +69,11 @@
 					</div>
 				</div>
 			</el-col>
+<<<<<<< HEAD
 			<div class="top" style="margin-top: 30px;">选项卡展示：</div>
+=======
+			<div class="top">选项卡展示：</div>
+>>>>>>> 810e5453779c3e88c82bd750e400242b085a56f1
 			<el-col :span="8">
 				<div class="grid-content bg-purple">
 					<div class="ik">
