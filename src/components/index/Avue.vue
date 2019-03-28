@@ -1,19 +1,14 @@
 <template>
-	<div>
-		<h2>Avue</h2>
-	</div>
+	<div><h2>Avue</h2></div>
 </template>
 
 <script>
-	export default {
-		name: 'Avue',
-		data() {
-			return {
-				
-			};
-		}
-	};
+export default {
+	name: 'Avue',
+	data() {
+		return {};
+	}
+};
 </script>
 
-<style>
-</style>
+<style></style>

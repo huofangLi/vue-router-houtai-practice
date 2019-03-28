@@ -1,3 +1,4 @@
+
 <template>
 	<div class="content">
 		<div class="si">
@@ -57,7 +58,6 @@ export default {
 	width: 200px;
 	height: 40px;
 	border-radius: 10px;
-
 	border: 1px solid #dddddd;
 	outline: none;
 }
@@ -68,7 +68,6 @@ export default {
 	align-items: center;
 	padding-left: 25%;
 }
-
 .g {
 	width: 200px;
 	height: 50px;
