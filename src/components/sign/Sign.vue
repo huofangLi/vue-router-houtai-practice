@@ -8,8 +8,8 @@
 
 		<div class="container"></div>
 		<div class="sign-box">
-			<router-link to="/sign_up">注册</router-link>
-			<router-link to="/sign_in">登录</router-link>
+			<router-link to="/sign_up" class="sign">注册</router-link>
+			<router-link to="/sign_in" class="sign">登录</router-link>
 			<router-view />
 		</div>
 	</div>
@@ -25,13 +25,6 @@ export default {
 </script>
 
 <style>
-	
-.item {
-	background-image: url(../../assets/login-bg.jpg);
-	/* background-size: 100%; */
-	width: 100%;
-	height: 100%;
-}
 .item-logo {
 	margin-top: 50px;
 	width: 100%;
@@ -53,11 +46,13 @@ export default {
 	right: 200px;
 	width: 500px;
 	height: 400px;
-	background-color: #fff;
 }
 a {
 	margin-right: 200px;
 	font-size: 16pt;
 	color: black;
+}
+.sign{
+	text-decoration: none;
 }
 </style>

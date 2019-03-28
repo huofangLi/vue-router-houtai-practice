@@ -133,8 +133,7 @@
 			</el-col>
 		</el-row>
 		<div class="image">
-			<img src="../../assets/logo-1.png" />
-			<image src="../../assets/item-icon.png" />
+			<img src="../../assets/item-icon.png" />
 		</div>
 	</div>
 	

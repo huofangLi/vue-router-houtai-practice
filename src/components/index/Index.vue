@@ -162,7 +162,7 @@ export default {
 };
 </script>
 
-<style>
+<style>	
 .el-header {
 	background-color: #b3c0d1;
 	color: #333;
@@ -184,12 +184,4 @@ export default {
 	justify-content: space-around;
 	justify-content: space-between;
 }
-
-/* .item-header-left {
-	justify-content: flex-start;
-}
-
-.item-header-right {
-	justify-content: flex-end;
-} */
 </style>

@@ -74,7 +74,7 @@ export default {
 	border-radius: 10px;
 	border: 1px solid #dddddd;
 	outline: none;
-	background-color: rgb(169, 89, , 228);
+	background-color: #42B983;
 	color: #eeeeee;
 }
 </style>
