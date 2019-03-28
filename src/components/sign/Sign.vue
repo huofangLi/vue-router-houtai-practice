@@ -1,5 +1,6 @@
+
 <template>
-	<div class="item">
+	<div>
 		<div class="item-logo">
 			<router-link to="/index">
 				<img src="../../assets/sign-bg.svg" class="logo" />
@@ -8,8 +9,8 @@
 
 		<div class="container"></div>
 		<div class="sign-box">
-			<router-link to="/sign_up" class="sign">注册</router-link>
-			<router-link to="/sign_in" class="sign">登录</router-link>
+			<router-link to="/sign_up" text-align:center>注册</router-link>
+			<router-link to="/sign_in">登录</router-link>
 			<router-view />
 		</div>
 	</div>
@@ -39,6 +40,8 @@ export default {
 .container {
 	width: 100%;
 	height: 800px;
+	background-image: url(../../assets/login-bg.jpg);
+	background-size: 100%;
 }
 .sign-box {
 	position: absolute;
@@ -46,13 +49,11 @@ export default {
 	right: 200px;
 	width: 500px;
 	height: 400px;
+	background-color: #fff;
 }
 a {
 	margin-right: 200px;
 	font-size: 16pt;
 	color: black;
-}
-.sign{
-	text-decoration: none;
 }
 </style>
