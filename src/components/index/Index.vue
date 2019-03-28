@@ -1,42 +1,55 @@
 <template>
 	<el-container style="height: 100%; border: 1px solid #eee">
-		<el-aside width="200px" style="background-color: #333333;">
+		<el-aside width="200px" style="background-color: #000000;">
 			<el-menu :default-openeds="['']">
 				<el-submenu index="1">
 					<template slot="title">
-						<router-link to="/yin_dao" class="logo"><i class="el-icon-message"></i>引导页</router-link>
+						<router-link to="/index/yin_dao" class="logo">
+							<i class="el-icon-message"></i>
+							引导页
+						</router-link>
 					</template>
 				</el-submenu>
 
 				<el-submenu index="2">
 					<template slot="title">
-						<router-link to="/quan_xian" class="logo"><i class="el-icon-message"></i>权限测试页</router-link>
+						<router-link to="/quan_xian" class="logo">
+							<i class="el-icon-message"></i>
+							权限测试页
+						</router-link>
 					</template>
 				</el-submenu>
 
 				<el-submenu index="3">
 					<template slot="title">
-						<router-link to="/shu_jv" class="logo"><i class="el-icon-message"></i>数据展示</router-link>
+						<router-link to="/shu_jv" class="logo">
+							<i class="el-icon-message"></i>
+							数据展示
+						</router-link>
 					</template>
 				</el-submenu>
 
 				<el-submenu index="4">
 					<template slot="title">
-						<router-link to="/a_li" class="logo"><i class="el-icon-message"></i>阿里图标</router-link>
+						<router-link to="/a_li" class="logo">
+							<i class="el-icon-message"></i>
+							阿里图标
+						</router-link>
 					</template>
 				</el-submenu>
 
-
-
 				<el-submenu index="5">
 					<template slot="title">
-						<i class="el-icon-menu"></i>第三方网站
+						<i class="el-icon-menu"></i>
+						第三方网站
 					</template>
 					<el-menu-item-group>
 						<el-menu-item index="5-1">
-							<router-link to="/avue" class="logo"></i>avue官网</router-link>
+							<router-link to="/avue" class="logo">avue官网</router-link>
 						</el-menu-item>
-						<el-menu-item index="5-2">百度</el-menu-item>
+						<el-menu-item index="5-2">
+							<router-link to="/bai_du" class="logo">百度</router-link>
+						</el-menu-item>
 						<el-menu-item index="5-3">搜狐</el-menu-item>
 						<el-menu-item index="5-4">360</el-menu-item>
 					</el-menu-item-group>
@@ -85,6 +98,16 @@
 		<el-container>
 			<el-header style="text-align: right; font-size: 12px">
 				<el-dropdown>
+					<i class="el-icon-setting" style="text-align: left;"></i>
+					<el-dropdown-menu slot="dropdown">
+						<el-dropdown-item>查看</el-dropdown-item>
+						<el-dropdown-item>新增</el-dropdown-item>
+						<el-dropdown-item>删除</el-dropdown-item>
+					</el-dropdown-menu>
+				</el-dropdown>
+				
+				
+				<el-dropdown>
 					<i class="el-icon-setting" style="margin-right: 15px"></i>
 					<el-dropdown-menu slot="dropdown">
 						<el-dropdown-item>查看</el-dropdown-item>
@@ -92,12 +115,22 @@
 						<el-dropdown-item>删除</el-dropdown-item>
 					</el-dropdown-menu>
 				</el-dropdown>
-				<span>王小虎</span>
+				<span style="margin-right: 15px;">admin</span>
+				<el-dropdown>
+					<i class="el-icon-arrow-down" style="margin-right: 15px"></i>
+					<el-dropdown-menu slot="dropdown">
+						<el-dropdown-item>首页</el-dropdown-item>
+						<el-dropdown-item>个人信息</el-dropdown-item>
+						<el-dropdown-item>avue官网</el-dropdown-item>
+						<el-dropdown-item>码云地址</el-dropdown-item>
+						<el-dropdown-item>github</el-dropdown-item>
+						<el-dropdown-item>退出系统</el-dropdown-item>
+					</el-dropdown-menu>
+				</el-dropdown>
+				<el-dropdown><i class="el-icon-more" style="margin-right: 15px"></i></el-dropdown>
 			</el-header>
 
-			<el-main>
-				<router-view />
-			</el-main>
+			<el-main><router-view /></el-main>
 		</el-container>
 	</el-container>
 </template>
@@ -128,7 +161,7 @@ export default {
 	color: #333;
 }
 
-.logo{
+.logo {
 	text-decoration: none;
 	color: black;
 	font: 12px;

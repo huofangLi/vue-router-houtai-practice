@@ -16,34 +16,49 @@ export default new Router({
 			meta: {
 				title: '主页'
 			},
-			children:[
-				{
-					path: '/yin_dao',
+			children: [{
+					path: '/index/yin_dao',
 					component: resolve => require(['../components/index/YinDaoYe.vue'], resolve),
 					meta: {
 						title: '引导页'
-					},
+					}
+				},
+				{
 					path: '/quan_xian',
 					component: resolve => require(['../components/index/QuanXian.vue'], resolve),
 					meta: {
-						title: '权限测试页'
-					},
+						title: '权限测试页',
+					}
+				},
+				{
 					path: '/shu_jv',
 					component: resolve => require(['../components/index/ShuJv.vue'], resolve),
 					meta: {
-						title: '数据展示'
-					},
+						title: '数据展示',
+					}
+				},
+				{
 					path: '/a_li',
 					component: resolve => require(['../components/index/ALi.vue'], resolve),
 					meta: {
-						title: '阿里图标'
-					},
+						title: '阿里图标',
+					}
+				},
+				{
 					path: '/avue',
 					component: resolve => require(['../components/index/Avue.vue'], resolve),
 					meta: {
-						title: 'Avue'
+						title: 'Avue',
+					}
+				},
+				{
+					path: '/bai_du',
+					component: resolve => require(['../components/index/BaiDu.vue'], resolve),
+					meta: {
+						title: '百度',
 					}
 				}
+
 			]
 		},
 		{
@@ -53,8 +68,7 @@ export default new Router({
 			meta: {
 				title: '注册登录'
 			},
-			children: [
-				{
+			children: [{
 					path: '/sign_in',
 					component: resolve => require(['../components/sign/SignIn.vue'], resolve),
 					meta: {

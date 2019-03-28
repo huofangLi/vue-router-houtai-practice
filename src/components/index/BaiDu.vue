@@ -1,14 +1,12 @@
 <template>
 	<div>
-		数据展示
-		
-		
+		<h2>百度</h2>
 	</div>
 </template>
 
 <script>
 	export default {
-		name: 'ShuJv',
+		name: 'BaiDu',
 		data() {
 			return {
 				
@@ -18,4 +16,5 @@
 </script>
 
 <style>
+
 </style>
